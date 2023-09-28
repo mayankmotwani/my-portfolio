@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mayank Motwani - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+
+  <body>
+    <!-- Home Panel -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Mayank Motwani
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+            mayankmotwani70@gmail.com
+          </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+            +91 9425424660
+          </div>
+        </div>
+        <div class="navs">
+          <a class="nav_links" href="#about-me">About Me</a>
+          <a class="nav_links" href="#skills">Skills</a>
+          <a class="nav_links" href="#projects">Projects</a>
+          <a class="nav_links" href="#recommendations">Recommendations</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about_me">
+      <div>
+        <img src="./html_finalprojimages/profile_image.gif" id="profile_image"/>
+      </div>
+      <div>
+          <h1>
+            Hello there,<br> I'm Mayank Motwani <img src="./html_finalprojimages/waving_hand_emoji.png" width="60px"/>
+          </h1>
+          <p>
+            A third-year Computer Science student at Vellore Institute of Technology, passionate about coding and problem-solving, having keen interest in software development. I am motivated to develop innovative  technologies that have a real-world impact. With strong programming skills and dedication to delivering high-quality work, I am excited to learn and grow as a software developer.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both; margin-bottom: 3mm"></div>
+      <div class="all_skills">
+        <div class="skill">
+            <img src="html_finalprojimages/cpp_logo.png"/>
+            <h4>C and C++</h4>
+            <p>1.5 years experience</p>
+        </div>
+        <div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h4>Java</h4>
+          <p>1 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="html_finalprojimages/leetcode_logo.png"/>
+            <h4 style="margin-top: 4mm; margin-bottom: 5mm">Data Structures and Algorithms</h4>
+            <p>1 year experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages/python_logo.png"/>
+          <h4>Python</h4>
+          <p>6 months experience</p>
+        </div>
+        <div class="skill">
+            <img src="html_finalprojimages/html5.png"/>
+            <h4>HTML and CSS</h4>
+            <p>6 months experience</p>
+        </div>
+        <div class="skill">
+            <img src="html_finalprojimages/js.jpeg"/>
+            <h4>JavaScript</h4>
+            <p>6 months experience</p>
+        </div>
+	<div class="skill">
+            <img src="html_finalprojimages/react.jpeg"/>
+            <h4>React</h4>
+            <p>6 months experience</p>
+        </div>
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section id="projects">
+      <h2>
+        Projects and Research Work
+      </h2>
+      <div style="clear:both; margin-bottom: 3mm"></div>
+        <div id="projects-container">
+          <div class="project-card">
+            <h3>Home Automation System</h3>
+            <ul>
+              <li>Built an IoT-based home automation device that aims to reduce the cost of appliances and enhance user experience.</li>
+              <br/>
+              <li>Programmed NodeMCU microcontroller to control the appliances and communicate with user's device over the internet using Blynk platform.</li>
+	      <br/>
+	      <li>Designed an intuitive dashboard through which users can manage the the appliances using their smartphones.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Novel Design for a Capacitive Pressure Sensor</h3>
+            <ul>
+              <li>Writing a research paper proposing a new design for touch-mode capacitive pressure sensor</li>
+              <br/>
+              <li>Formulated a mathematical model of the design and conducted an indepth analysis using MATLAB.</li>
+	      <br/>
+	      <li>The new design demonstrated significant increase in capacitive sensitivity and mechanical robustness of the sensor compared to existing designs.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both; margin-bottom: 1mm"></div>
+      <div id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Mayank has been an awesome experience. He is highly knowledgeable and always goes the extra mile to ensure everything is right. For any future projects that require his expertise, I would definitely want to work with him.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="recommendation_form">
+      <div id="form">
+        <fieldset>
+          <legend class="legend">Leave a Recommendation</legend>
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="recommendation_btn">
+            <button id="recommendation_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="homebutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
